@@ -1,0 +1,499 @@
+body{ 
+  margin: 0;
+  padding: 0;
+  height:100%;
+  
+}
+
+nav {
+  background-color: white;
+  overflow: hidden;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin-top:2px;
+  margin-bottom:2px;
+  padding-left: 2 0px; 
+          
+ 
+  
+}
+nav ul li {
+  display: block;
+  float: none;
+  
+}
+nav ul li a {
+  display: block;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 15px;  
+  text-decoration: none;
+  color: #039c31  ;
+  text-transform: uppercase;
+  margin: 0 10px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+.anim .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1270px) {
+  .anim ul li a {display: none;}
+  .anim ul li a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .anim.responsive {position: relative;}
+  .anim.responsive ul li a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .anim.responsive ul li a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+nav.anim ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.anim ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.anim ul li a:hover:after {
+  -webkit-animation: circle 1.0s ease-in forwards;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #f7ff19;
+    border-radius: 100%;
+  }
+  100% {
+    background: #ffff00;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+
+
+
+
+
+
+#particles-js {
+ 
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+#outer{
+
+  z-index: 1;
+  position: absolute;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+#circle {
+   
+    width: 80%;
+    height: 0;
+    margin: auto;
+    padding-bottom: 80%;
+    background: #ff3385;
+    border-radius: 50%;
+    border-style: ridge;
+    border-width: 3px;
+
+  }
+
+#circle  img {
+
+  margin-left: 25%;
+  margin-top: 25px;
+  max-width: 50%;
+  border-radius: 50%;
+}
+#name {
+  font-family: 'Padauk', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  margin: 0;
+
+}
+#job {
+  font-family: 'Padauk', sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+  margin: 0;
+}
+
+#circle a{
+
+}
+#circle ul{
+  margin: 0;
+  text-align: center;
+  padding-left: 0px;
+  margin-top: 10px; 
+}
+#circle li{
+  display: inline-block;
+}
+.button-round{
+  
+    color: #fff;
+    padding: 1.20vw;
+    border: none;
+     font-size: 1.5vw;
+}
+
+
+
+
+#Aboutme{
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(45deg, #a8d5f4 , #ffb3f5);
+  font-family: 'Padauk', sans-serif;
+  color: white;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#Aboutme h1{
+  color:black;
+  font-size: 2.0vw;
+}
+#aboutp{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vw;
+    text-align: justify;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#Education{
+  font-family: 'Padauk', sans-serif;
+}
+#Education h1{
+   font-size: 2.0vw;
+}
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border-style: outset;
+  border-width: 5px;
+  border-radius: 5px;
+    text-align: left;
+}
+.education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #374054;
+    font-family: 'Lato', sans-serif;
+}
+.education-block h4 {
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+    font-family: 'Lato', sans-serif;
+     float: left;
+
+}
+.education-block h5 {
+    font-size: 15px;
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.education-block span{
+  float: right;
+}
+
+
+
+
+
+#Training{
+  background-color: #f2f2f5;
+  font-family: 'Padauk', sans-serif;
+}
+#Training h1{
+   font-size: 2.0vw;
+}
+.Training-block {
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    
+    
+    box-shadow: 5px 10px 18px #888888;
+    content: "";
+   display: table;
+    clear: both;
+
+}
+#bsnlimg{
+  width: 195px;
+  height: 195px;
+  margin-left: 0px; 
+  margin-top: 0px;
+  float: left;
+
+}
+
+.Training-block img{
+  width: 195px;
+  height: 195px;
+  margin-left: 0px; 
+  margin-top: 0px;
+  object-fit: cover;
+  
+}
+.Training-blocks{
+  margin-left: 200px;
+  
+
+}
+.Training-blocks h3 {
+    font-weight: 500;
+    float: right;
+    margin-top: 10px;
+    color: #374054;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7vw;
+    
+}
+.Training-blocks h4 {
+    color: #74808a;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+     float: left;
+     margin-top: 0px;
+     margin-bottom: 5px;
+     font-size: 1.4vw;
+     text-align: justify;
+
+}
+.Training-blocks h5 {
+    font-size: 1.1vw;
+    color: #74808a;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    }
+#amanimg{
+  width: 195px;
+  height: 195px;
+  margin-left: 0px; 
+  margin-top: 0px;
+  float: left;
+}
+
+#amanimg img{
+  width: 100%;
+  height: auto;
+  border-radius:5%;
+  margin-left: 0px; 
+  margin-top: 0px;
+  object-fit: scale-down;
+ 
+}
+
+#Projects{
+  font-family: 'Padauk', sans-serif;
+}
+#Projects h1{
+   font-size: 2.0vw;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  background-color: #7ef2e3;
+  margin-left: 2.33%;
+  border-style: outset;
+  border-width: 3px;
+  border-radius: 20px;
+  
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: white;
+}
+.proimage{
+	height: 17vw;
+}
+
+.row img{
+margin-left: 20%;
+margin-top: 3%;
+  border-radius: 50%;
+  max-width: 60%;
+}
+
+
+
+.row h3{
+  text-align: center;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 1.5vw;
+  font-family: 'Padauk', sans-serif;
+}
+
+.row p{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+   font-size: 1.2vw; 
+
+
+}
+.built{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3vw; 
+}
+
+@media only screen and (max-width: 700px) {
+  .column {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+  }
+  .row img{
+	margin-left: 35%;
+	margin-top: 3%;
+ 	border-radius: 10%;
+  	max-width: 30%;
+}
+.proimage{
+	height: auto;
+}
+}
+
+
+#Skills{
+  background-color: #f2f2f5;
+  font-family: 'Padauk', sans-serif;
+  padding: 30px 15px;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 1.7vw;
+}
+#Skills ul{
+  
+  list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#Skills li{
+      display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: #374054;
+    background: #e4e4ea;
+    list-style: none;
+    cursor: default;
+    font-size: 1.8vw;
+}
+.foot{
+  height: 15vw;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  font-size: 1.0vw;
+
+}
+.fa-heart{
+color: red;
+}
+
+.foot ul{
+ 
+  text-align: center;
+  padding-left: 0px;
+  margin-top: 10px; 
+}
+.foot li{
+  display: inline-block;
+}
