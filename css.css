@@ -1,58 +1,68 @@
-body{ 
+body {
   margin: 0;
   padding: 0;
-  height:100%;
-  
+  height: 100%;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 nav {
-  background-color: white;
+  background-color: inherit;
   overflow: hidden;
-  margin-left: 17%;
-  margin-right: 17%;
+  /* margin-left: 15%;
+  margin-right: 15%; */
+  margin: auto;
 }
+
 nav ul {
   list-style: none;
   text-align: center;
-  margin-top:2px;
-  margin-bottom:2px;
-  padding-left: 2 0px; 
-          
- 
-  
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 2px 0;
+}
+nav img{
+  float: left;
+  margin-right: 100px;
 }
 nav ul li {
   display: block;
   float: none;
-  
 }
+
 nav ul li a {
   display: block;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  padding: 15px;  
+  padding: 15px;
   text-decoration: none;
-  color: #039c31  ;
+  color: #039c31;
   text-transform: uppercase;
   margin: 0 10px;
   float: left;
   text-align: center;
-  text-decoration: none;
   font-size: 20px;
 }
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: #555;
 }
+
 .anim .icon {
   display: none;
 }
 
 @media screen and (max-width: 1270px) {
-  .anim ul li a {display: none;}
+  .anim ul li a {
+    display: none;
+  }
+
   .anim ul li a.icon {
     float: right;
     display: block;
@@ -60,12 +70,16 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 1270px) {
-  .anim.responsive {position: relative;}
+  .anim.responsive {
+    position: relative;
+  }
+
   .anim.responsive ul li a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .anim.responsive ul li a {
     float: none;
     display: block;
@@ -73,12 +87,12 @@ nav ul li a:hover {
   }
 }
 
-
 nav.anim ul li a {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
+
 nav.anim ul li a:after {
   display: block;
   position: absolute;
@@ -94,6 +108,7 @@ nav.anim ul li a:after {
   border-radius: 50%;
   background: transparent;
 }
+
 nav.anim ul li a:hover:after {
   -webkit-animation: circle 1.0s ease-in forwards;
 }
@@ -111,6 +126,7 @@ nav.anim ul li a:hover:after {
     background: #f7ff19;
     border-radius: 100%;
   }
+
   100% {
     background: #ffff00;
     height: 5000%;
@@ -125,61 +141,51 @@ nav.anim ul li a:hover:after {
   }
 }
 
-
-
-
-
-
-
 #particles-js {
- 
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #ffffff ;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-
 }
-#outer{
 
+#outer {
   z-index: 1;
   position: absolute;
   width: 50%;
   height: auto;
   margin-left: 25%;
   margin-right: 25%;
-
 }
+
 #circle {
-   
-    width: 80%;
-    height: 0;
-    margin: auto;
-    padding-bottom: 80%;
-    background: #ff3385;
-    border-radius: 50%;
-    border-style: ridge;
-    border-width: 3px;
+  width: 80%;
+  height: 0;
+  margin: auto;
+  padding-bottom: 80%;
+  background: #ff3385;
+  border-radius: 50%;
+  border-style: ridge;
+  border-width: 3px;
+}
 
-  }
-
-#circle  img {
-
+#circle img {
   margin-left: 25%;
   margin-top: 25px;
   max-width: 50%;
   border-radius: 50%;
 }
+
 #name {
   font-family: 'Padauk', sans-serif;
   text-align: center;
   font-size: 3vw;
   color: white;
   margin: 0;
-
 }
+
 #job {
   font-family: 'Padauk', sans-serif;
   text-align: center;
@@ -188,201 +194,131 @@ nav.anim ul li a:hover:after {
   margin: 0;
 }
 
-#circle a{
+#circle a {}
 
-}
-#circle ul{
+#circle ul {
   margin: 0;
   text-align: center;
   padding-left: 0px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
-#circle li{
+
+#circle li {
   display: inline-block;
 }
-.button-round{
-  
-    color: #fff;
-    padding: 1.20vw;
-    border: none;
-     font-size: 1.5vw;
+
+.button-round {
+  color: #fff;
+  padding: 1.20vw;
+  border: none;
+  font-size: 1.5vw;
 }
 
-
-
-
-#Aboutme{
-  background-color: white; /* For browsers that do not support gradients */
-  background-image: linear-gradient(45deg, #a8d5f4 , #ffb3f5);
+#Aboutme {
+  background-color: white;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(45deg, #a8d5f4, #ffb3f5);
   font-family: 'Padauk', sans-serif;
   color: white;
   margin-bottom: 0px;
   margin-left: 100px;
   margin-right: 100px;
+  padding-top: 15px;
 }
-#Aboutme h1{
-  color:black;
+
+#Aboutme h1 {
+  color: black;
   font-size: 2.0vw;
 }
-#aboutp{
+
+#aboutp {
   font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7vw;
-    text-align: justify;
-    color: black;
-    margin-left: 50px;
-    margin-right: 50px;
+  font-size: 1.7vw;
+  text-align: justify;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-#Education{
+
+#Education {
   font-family: 'Padauk', sans-serif;
 }
-#Education h1{
-   font-size: 2.0vw;
+
+#Education h1 {
+  font-size: 2.0vw;
 }
+
 .education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border-style: outset;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border-style: outset;
   border-width: 5px;
   border-radius: 5px;
-    text-align: left;
+  text-align: left;
 }
+
 .education-block h3 {
-    font-weight: 500;
-    float: left;
-    margin: 0;
-    color: #374054;
-    font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  color: #374054;
+  font-family: 'Lato', sans-serif;
 }
+
 .education-block h4 {
-    color: #74808a;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 2px 0;
-    font-family: 'Lato', sans-serif;
-     float: left;
-
+  color: #74808a;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+  font-family: 'Lato', sans-serif;
+  float: left;
 }
+
 .education-block h5 {
-    font-size: 15px;
-    color: #74808a;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 2px 0;
-    font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #74808a;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+  font-family: 'Lato', sans-serif;
 }
 
-.education-block span{
+.education-block span {
   float: right;
 }
 
+#Training {
+  font-family: 'Padauk', sans-serif;
+}
 
+#Training h1 {
+  font-size: 2.0vw;
+}
 
+.trainingouter {
+  margin: auto;
+  width: 55%;
+}
 
-
-#Training{
+#Projects {
   background-color: #f2f2f5;
   font-family: 'Padauk', sans-serif;
 }
-#Training h1{
-   font-size: 2.0vw;
-}
-.Training-block {
-    background-color: white;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    
-    
-    box-shadow: 5px 10px 18px #888888;
-    content: "";
-   display: table;
-    clear: both;
 
-}
-#bsnlimg{
-  width: 195px;
-  height: 195px;
-  margin-left: 0px; 
-  margin-top: 0px;
-  float: left;
-
-}
-
-.Training-block img{
-  width: 195px;
-  height: 195px;
-  margin-left: 0px; 
-  margin-top: 0px;
-  object-fit: cover;
-  
-}
-.Training-blocks{
-  margin-left: 200px;
-  
-
-}
-.Training-blocks h3 {
-    font-weight: 500;
-    float: right;
-    margin-top: 10px;
-    color: #374054;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.7vw;
-    
-}
-.Training-blocks h4 {
-    color: #74808a;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-     float: left;
-     margin-top: 0px;
-     margin-bottom: 5px;
-     font-size: 1.4vw;
-     text-align: justify;
-
-}
-.Training-blocks h5 {
-    font-size: 1.1vw;
-    color: #74808a;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-    }
-#amanimg{
-  width: 195px;
-  height: 195px;
-  margin-left: 0px; 
-  margin-top: 0px;
-  float: left;
-}
-
-#amanimg img{
-  width: 100%;
-  height: auto;
-  border-radius:5%;
-  margin-left: 0px; 
-  margin-top: 0px;
-  object-fit: scale-down;
- 
-}
-
-#Projects{
-  font-family: 'Padauk', sans-serif;
-}
-#Projects h1{
-   font-size: 2.0vw;
+#Projects h1 {
+  font-size: 2.0vw;
+  padding-top: 20px;
 }
 
 .column {
   float: left;
-  width: 30%;
-  background-color: #7ef2e3;
-  margin-left: 2.33%;
+  width: 25%;
+  background-color: #3a405a;
+  margin: 0 3% 0 4%;
   border-style: outset;
   border-width: 3px;
   border-radius: 20px;
-  
-
 }
 
 /* Clear floats after the columns */
@@ -392,40 +328,39 @@ nav.anim ul li a:hover:after {
   clear: both;
   background-color: white;
 }
-.proimage{
-	height: 17vw;
+
+.proimage {
+  height: 14vw;
 }
 
-.row img{
-margin-left: 20%;
-margin-top: 3%;
+.row img {
+  margin-left: 20%;
+  margin-top: 3%;
   border-radius: 50%;
   max-width: 60%;
 }
 
-
-
-.row h3{
+.row h3 {
   text-align: center;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #f9dec9;
   font-size: 1.5vw;
   font-family: 'Padauk', sans-serif;
 }
 
-.row p{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.row p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px 10px 10px 10px;
   text-align: center;
-   font-size: 1.2vw; 
-
-
+  font-size: 1.2vw;
+  color: #ffffff;
 }
-.built{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+.built {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-align: center;
-  font-size: 1.3vw; 
+  font-size: 1.3vw;
 }
 
 @media only screen and (max-width: 700px) {
@@ -436,64 +371,67 @@ margin-top: 3%;
     margin-right: 15%;
     margin-bottom: 2%;
   }
-  .row img{
-	margin-left: 35%;
-	margin-top: 3%;
- 	border-radius: 10%;
-  	max-width: 30%;
-}
-.proimage{
-	height: auto;
-}
+
+  .row img {
+    margin-left: 35%;
+    margin-top: 3%;
+    border-radius: 10%;
+    max-width: 30%;
+  }
+
+  .proimage {
+    height: auto;
+  }
 }
 
-
-#Skills{
+#Skills {
   background-color: #f2f2f5;
   font-family: 'Padauk', sans-serif;
-  padding: 30px 15px;
+  font-size: 1.7vw;
+  padding: 20px 15px;
   text-align: center;
   margin-top: 0px;
-  font-size: 1.7vw;
 }
-#Skills ul{
-  
+
+#Skills ul {
   list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
-#Skills li{
-      display: inline-block;
-    margin: 7px;
-    padding: 5px 10px;
-    color: #374054;
-    background: #e4e4ea;
-    list-style: none;
-    cursor: default;
-    font-size: 1.8vw;
+
+#Skills li {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: #374054;
+  background: #e4e4ea;
+  list-style: none;
+  cursor: default;
+  font-size: 1.8vw;
 }
-.foot{
+
+.foot {
   height: 15vw;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #333333;
   text-align: center;
   color: white;
   font-size: 1.0vw;
-
-}
-.fa-heart{
-color: red;
 }
 
-.foot ul{
- 
+.fa-heart {
+  color: red;
+}
+
+.foot ul {
   text-align: center;
   padding-left: 0px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
-.foot li{
+
+.foot li {
   display: inline-block;
 }
